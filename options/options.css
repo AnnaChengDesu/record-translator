@@ -1,0 +1,51 @@
+.container {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  display: block;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+  display: block;
+} 

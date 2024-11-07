@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <p id="status-text" class="status-text">点击下方按钮录制语音并翻译成英文</p>
+    <button id="record-btn" class="record-btn idle">录制</button>
+    <div id="result-container" class="hidden">
+      <textarea id="translation-result" readonly></textarea>
+      <div class="button-group">
+        <button id="copy-btn" class="action-btn">复制文本</button>
+        <button id="restart-btn" class="action-btn">重新录制</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

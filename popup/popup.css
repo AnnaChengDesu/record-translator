@@ -1,0 +1,149 @@
+.container {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-text {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  color: #343a40;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.record-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+.record-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.record-btn.recording {
+  background-color: #dc3545;
+  color: white;
+}
+
+.record-btn.idle {
+  background-color: #28a745;
+  color: white;
+}
+
+.record-btn.disabled {
+  background-color: #6c757d;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.8;
+  transform: none;
+  box-shadow: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#result-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#translation-result {
+  width: calc(100% - 24px);
+  height: 120px;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: white;
+  color: #495057;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#copy-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+#restart-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.action-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.blinking {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+/* 添加响应式设计 */
+@media (max-width: 360px) {
+  .container {
+    width: 260px;
+    padding: 16px;
+  }
+  
+  .status-text {
+    font-size: 14px;
+  }
+  
+  .record-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  
+  .action-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+} 
